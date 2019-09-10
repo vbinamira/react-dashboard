@@ -1,16 +1,23 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './components/App';
+import { render } from 'react-dom';
+import { Provider } from 'react-redux';
+import { App } from './App';
 import * as serviceWorker from './serviceWorker';
 
+import { store } from './_helpers';
 import 'react-dropdown/style.css';
 import './index.css';
 import "bootstrap/dist/css/bootstrap.css";
 
+// setup fake backend
+import { configureFakeBackend } from './_helpers';
+configureFakeBackend();
 
-ReactDOM.render(
-  <App />,
-  document.getElementById('root')
+render(
+    <Provider store={store}>
+        <App />
+    </Provider>,
+    document.getElementById('app')
 );
 
 // If you want your app to work offline and load faster, you can change
