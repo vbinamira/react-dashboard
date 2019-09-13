@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { Container, Nav } from '../_components/styled-components';
-import logo from '../logo.svg';
+
 
 // fusioncharts
 import FusionCharts from "fusioncharts";

@@ -9,6 +9,14 @@ import { HomePage } from '../Home';
 import { LoginPage } from '../Login';
 import { RegisterPage } from '../Register';
 
+// fusioncharts
+import FusionCharts from "fusioncharts";
+import Charts from "fusioncharts/fusioncharts.charts";
+import Maps from "fusioncharts/fusioncharts.maps";
+import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
+import ReactFC from "react-fusioncharts";
+import "../_components/chart-theme";
+
 class App extends React.Component {
     constructor(props) {
         super(props);
