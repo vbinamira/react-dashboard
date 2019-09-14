@@ -1,4 +1,4 @@
-export default function formatNum(num) {
+export const formatNum = (num) => {
   let si = [
     { value: 1, symbol: "" },
     { value: 1e3, symbol: "k" },
